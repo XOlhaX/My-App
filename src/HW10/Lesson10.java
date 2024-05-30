@@ -43,7 +43,7 @@ public class Lesson10 {
 
         System.out.print("Введіть кількість повторень: ");
         int n = scanner.nextInt();
-        scanner.nextLine(); // Очистити буфер
+        scanner.nextLine();
         System.out.print("Введіть текст: ");
         String text = scanner.nextLine();
         repeatText(n, text);
@@ -52,12 +52,12 @@ public class Lesson10 {
     }
 
     public static void printSquare(int number) {
-        int square = number * number;
+        int square = power(number, 2);
         System.out.println("Квадрат числа " + number + " = " + square);
     }
 
     public static double calculateCylinderVolume(double radius, double height) {
-        return Math.PI * radius * radius * height;
+        return Math.PI * power(radius, 2) * height;
     }
 
     public static int sumArray(int[] array) {
@@ -73,7 +73,7 @@ public class Lesson10 {
         return reversed.reverse().toString();
     }
 
-    public static int power(int a, int b) {
+    public static int power(double a, int b) {
         return (int) Math.pow(a, b);
     }
 
