@@ -1,4 +1,4 @@
-package Lesson13;
+package HW13;
 
 public class Triangle extends Shape {
     double sideA;

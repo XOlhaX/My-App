@@ -1,4 +1,4 @@
-package Lesson13;
+package HW13;
 
 public class Square extends Shape {
     private double side;
